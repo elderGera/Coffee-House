@@ -1,0 +1,962 @@
+/******************** Reset the default styles of the browsers ********************/
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/******************** Base styles for the website ********************/
+body {
+  font: 100%/1.5 "Roboto", sans-serif;
+  background-color: #e0e0e0;
+  color: #0b1315;
+  min-width: 360px;
+  z-index: 0;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  letter-spacing: 2px;
+}
+h1 {
+  color: #fff;
+  font-size: 2rem;
+}
+h2 {
+  color: #1f439e;
+  font-size: 1.5rem;
+}
+h3 {
+  color: #494949;
+  font-size: 1.125rem;
+}
+p,
+a,
+th,
+td,
+label,
+input,
+textarea {
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+/******************** Header ********************/
+.headerIndex .container {
+  background-color: #1f439e;
+  height: 100px;
+  margin-left: 50px;
+}
+#headerLogo {
+  position: absolute;
+  margin-left: -50px;
+  z-index: 2;
+  width: 100px;
+  animation-name: headerLogo;
+  animation-duration: 1s;
+}
+@keyframes headerLogo {
+  from {
+    height: 128px;
+    width: 128px;
+  }
+  to {
+    height: 100px;
+    width: 100px;
+  }
+}
+.icon img {
+  width: 25px;
+  animation-name: opacityImg;
+  animation-duration: 1s;
+}
+@keyframes opacityImg {
+  from {
+    opacity: 0.3;
+    padding: 5px;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.headerNav {
+  text-align: right;
+}
+.headerNav #myLinks {
+  display: none;
+}
+#headerHeading {
+  text-align: center;
+  text-shadow: -0.75px 0 #0b1315, 0 0.75px #0b1315, 0.75px 0 #0b1315,
+    0 -0.75px #0b1315;
+  animation-name: heading;
+  animation-duration: 1s;
+  padding: 0;
+}
+@keyframes heading {
+  from {
+    opacity: 0.5;
+    padding-top: 28px;
+  }
+  to {
+    opacity: 1;
+    padding-top: 0px;
+  }
+}
+#mobileTablet {
+  position: relative;
+  background-color: #1f439e;
+  z-index: 1;
+}
+
+.headerIndex #myLinks ul li {
+  text-align: center;
+}
+.headerIndex #myLinks ul li a {
+  color: #e0e0e0;
+}
+.headerIndex #myLinks ul li:nth-child(1),
+.headerIndex #myLinks ul li:nth-child(3) {
+  animation-name: sideRight;
+  animation-duration: 1s;
+}
+.headerIndex #myLinks ul li:nth-child(2),
+.headerIndex #myLinks ul li:nth-child(4) {
+  animation-name: sideLeft;
+  animation-duration: 1s;
+}
+@keyframes sideLeft {
+  from {
+    opacity: 0.3;
+    margin-right: 360px;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes sideRight {
+  from {
+    opacity: 0.3;
+    margin-left: 360px;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.headerIndex .container #myLinks ul .navActive a {
+  color: #ed7d0c;
+  font-weight: 700;
+}
+.container #myLinks ul .navActive a:hover {
+  text-decoration: none;
+}
+.headerIndex #myLinks ul li a:hover,
+.headerIndex #myLinks ul li a:focus {
+  text-decoration: underline;
+  text-decoration-color: #ed7d0c;
+}
+.headerIndex #myLinks ul li a:active {
+  text-decoration: none;
+  color: #ed7d0c;
+}
+
+/******************** Footer ********************/
+.footerIndex .container {
+  background-color: #0b1315;
+  color: #e0e0e0;
+}
+.containerMediaLogo {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0 1em;
+  margin-bottom: 1em;
+}
+.footerMedia {
+  margin: auto 0;
+}
+.footerMedia a {
+  padding: 0 0.3em;
+}
+.footerMedia i {
+  color: #e0e0e0;
+}
+.footerMedia i:hover,
+.footerMedia i:focus,
+.footerMedia i:active {
+  color: #ed7d0c;
+  transition: all 0.5s ease;
+}
+#footerLogo {
+  width: 100px;
+}
+#myFooterLinks .navActive {
+  color: #ed7d0c;
+  font-weight: 700;
+}
+#myFooterLinks .navActive:hover {
+  color: #e0e0e0;
+}
+#myFooterLinks {
+  width: 206px;
+  text-align: center;
+  margin: auto;
+}
+#myFooterLinks a {
+  display: block;
+  background-color: #e0e0e0;
+  color: #0b1315;
+  margin: 3px;
+  border-radius: 9px;
+}
+#myFooterLinks a:hover {
+  background-color: #ed7d0c;
+  color: #e0e0e0;
+  transition: all 0.5s ease;
+}
+.footerContact a {
+  color: #e0e0e0;
+  text-decoration: underline;
+  transition: all 0.5s ease;
+}
+.footerContact a:hover {
+  color: #ed7d0c;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.footerContact {
+  width: 206px;
+  margin: auto;
+  padding-top: 1em;
+}
+.footerCopy {
+  padding: 1em 0 1em 0;
+  width: 206px;
+  margin: auto;
+}
+
+/******************** Home Page ********************/
+/********** Slider **********/
+.slideshow-container {
+  position: relative;
+  margin: 0 auto;
+}
+.slideshow-container picture img {
+  display: block;
+  min-width: 280px;
+  height: 50vh;
+  transition: all 0.5s ease;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #e0e0e0;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 50% 50% 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 50% 0 0 50%;
+}
+.prev:hover,
+.next:hover {
+  color: #ed7d0c;
+  background-color: rgb(224, 224, 224, 0.3);
+}
+
+/* The dots/bullets/indicators */
+.dots {
+  height: 48px;
+  display: block;
+  padding-top: 16px;
+}
+.dot {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 3px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #494949;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/********** Menu **********/
+#headingMenu {
+  text-align: center;
+  margin: 0.5em 0;
+}
+.menu {
+  min-width: 360px;
+  margin-bottom: 1em;
+}
+.menu th {
+  width: 100%;
+  padding: 0 5px;
+  color: #0b1315;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  text-decoration-color: #ed7d0c;
+  background-color: #fff;
+  transition: all 0.5s ease;
+}
+.menu table {
+  margin: 0 auto;
+  width: 95%;
+  border-collapse: collapse;
+}
+.menu td {
+  text-align: right;
+  padding: 0 5px;
+  background-color: #ed7d0c;
+}
+.menu td:nth-child(2),
+.menu td:nth-child(3) {
+  background-color: #fff;
+  border-bottom: 1px solid #ed7d0c;
+}
+.mobile {
+  min-width: 160px;
+  border-top-left-radius: 70px 30px;
+  text-align: left;
+  height: 99px;
+  border-bottom: 1px solid #ed7d0c;
+}
+.descriptionCofee {
+  display: none;
+}
+.tabletDesktop {
+  display: none;
+}
+.menu td img {
+  display: block;
+  margin: 25px auto;
+  width: 50px;
+}
+.menu table .imgBg {
+  background: none;
+}
+.menu td img:hover {
+  content: url("../assets/images/logo-coffee-cup.webp");
+}
+
+/******************** About Us Page ********************/
+.aboutUs picture img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all 0.5s ease;
+}
+.aboutUsContent h2 {
+  margin-top: 1em;
+  text-align: center;
+}
+.aboutUsContent p {
+  margin: 0.5em auto;
+  width: 90vw;
+  min-width: 340px;
+}
+
+/******************** Testimonials Page ********************/
+.testimonials {
+  width: 100%;
+  padding: 43px 1em 1em 1em;
+}
+.testimonial {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  background: #fff;
+  color: #000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.testeach {
+  padding: 1em;
+}
+.cardBottom {
+  display: flex;
+  justify-content: space-around;
+}
+.cardBottom img,
+.cardBottom div,
+.cardBottom p {
+  margin: auto 0;
+}
+.names {
+  color: #003d86;
+  text-align: center;
+  font-weight: bold;
+}
+.testnumber {
+  color: #ed7d0c;
+}
+.buttonPlus a i {
+  color: #003d86;
+  padding: 0.3em;
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.buttonPlus a i:hover,
+.buttonPlus a i:focus,
+.buttonPlus a i:active {
+  background: #ed7d0c !important;
+}
+
+/******************** Contact Page ********************/
+.contactPage h2 {
+  margin-top: 1.5em;
+  text-align: center;
+}
+.contactPage p {
+  margin: 0 1em;
+}
+
+/********** Schedule **********/
+.contactPage table {
+  margin: 1em auto;
+}
+.contactPage table th {
+  text-align: left;
+  padding: 0 0.3em;
+}
+.contactPage table td {
+  text-align: right;
+  padding: 0 0.3em;
+}
+
+/********** Text **********/
+.cpText p {
+  width: 90%;
+  margin: 0 auto;
+  min-width: 340px;
+  padding-bottom: 20px;
+}
+.cpText p a {
+  color: #0b1315;
+  text-decoration: underline;
+}
+.cpText p a:hover {
+  color: #ed7d0c;
+  transition: all 0.5s ease;
+}
+
+/********** Location **********/
+.cpLocation {
+  display: block;
+  min-width: 360px;
+  width: 100%;
+  height: 281px;
+}
+.cpLocation iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/********** Video **********/
+.cpVideo {
+  display: block;
+  min-width: 360px;
+  width: 100%;
+  height: 281px;
+}
+.cpVideo iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/********** Form **********/
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  border: none;
+}
+.send {
+  display: flex;
+  justify-content: end;
+}
+input[type="submit"] {
+  background-color: #fff;
+  color: #0b1315;
+  padding: 12px 20px;
+  cursor: pointer;
+  margin-left: 3em;
+  border: none;
+  border-radius: 24px;
+}
+input[type="submit"]:hover {
+  background-color: #ed7d0c;
+  transition: all 0.5s ease;
+}
+.cpFormText {
+  padding: 20px;
+  width: 100%;
+}
+
+/******************** 404 Page ********************/
+.error {
+  display: flex;
+  background-color: #fff;
+  height: 100vh;
+  min-width: 360px;
+  justify-content: center;
+}
+.errorContent,
+.error picture {
+  margin: auto 0;
+}
+#errorLogo {
+  display: block;
+  width: 10vw;
+  height: auto;
+  margin: 1em;
+  min-width: 36px;
+  max-width: 100px;
+}
+.error picture {
+  display: none;
+}
+
+/****************************** For Tablet version ******************************/
+@media screen and (min-width: 640px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.375rem;
+  }
+  p,
+  a,
+  th,
+  td,
+  label,
+  input,
+  textarea {
+    font-size: 0.875rem;
+  }
+
+  /******************** Header ********************/
+  /******************** Footer ********************/
+  .containerMediaLogo {
+    width: 100%;
+    order: 1;
+  }
+  #myFooterLinks {
+    width: 240px;
+    order: 3;
+    margin: auto 1em auto 0;
+  }
+  .footerContact {
+    width: 240px;
+    padding-top: 0;
+    order: 2;
+    margin: 0 0 0 1em;
+  }
+  .footerDesktop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footerCopy {
+    padding: 1em;
+    width: auto;
+    margin: 0;
+  }
+  #myFooterLinks a {
+    border-radius: 10.5px;
+  }
+
+  /******************** Home Page ********************/
+  /********** Slider **********/
+  .slideshow-container picture img {
+    height: 60vh;
+  }
+  .dots {
+    height: 54px;
+    padding-top: 18px;
+  }
+  .dot {
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    margin: 0 4px;
+  }
+
+  /********** Menu **********/
+  .menu table td {
+    text-align: right;
+    vertical-align: bottom;
+    padding: 5px;
+    height: 65px;
+  }
+  .menu table td:nth-child(2),
+  .menu table td:nth-child(3) {
+    vertical-align: top;
+    padding: 5px;
+    border: none;
+  }
+  .container .menu .euro {
+    border-bottom: 2px solid #ed7d0c;
+    height: 65px;
+    padding-left: 50px;
+  }
+  .mobile {
+    display: none;
+    border: none;
+  }
+  .menu .tabletDesktop {
+    display: block !important;
+    width: 100%;
+    height: 65px;
+    border-top-left-radius: 70px 30px;
+    padding: 40px 5px 5px 5px;
+    text-align: left;
+  }
+  .menu .descriptionCofee {
+    display: block;
+    text-align: left;
+    height: 65px;
+    background: #fff;
+    padding: 5px;
+  }
+  .menu table {
+    width: 70%;
+  }
+  .menu td img {
+    margin: 35px auto 33px auto;
+    width: 50px;
+  }
+  .imgBg {
+    border-bottom: 2px solid #e0e0e0;
+  }
+
+  /******************** About Us Page ********************/
+  .aboutUs picture img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 60vh;
+    margin: 0.5em auto 0 auto;
+    border-top-left-radius: 70px 30px;
+    border-top-right-radius: 70px 30px;
+    border-bottom-left-radius: 30px 70px;
+    border-bottom-right-radius: 30px 70px;
+    transition: all 0.5s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .aboutUsContent p {
+    margin: 0.5em auto;
+    width: 70vw;
+  }
+
+  /******************** Testimonials Page ********************/
+  .names {
+    display: flex;
+  }
+  .names div {
+    margin: 0 1em;
+  }
+  .buttonPlus a i {
+    padding: 0.4em;
+  }
+
+  /******************** Contact Page ********************/
+  .rowOne,
+  .rowTwo {
+    display: flex;
+    justify-content: space-around;
+  }
+  .cpText {
+    width: 45vw;
+  }
+  .cpText p {
+    min-width: 0;
+  }
+  .cpLocation {
+    width: 45vw;
+    margin-top: 42px;
+    height: auto;
+    min-width: 0;
+    animation-name: opacityContact;
+    animation-duration: 3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .cpVideo {
+    width: 45vw;
+    margin-top: 20px;
+    height: auto;
+    margin-bottom: 20px;
+    min-width: 0;
+    animation-name: opacityContact;
+    animation-duration: 3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  @keyframes opacityContact {
+    from {
+      opacity: 0.1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .cpFormText {
+    width: 45vw;
+  }
+
+  /******************** 404 Page ********************/
+  .error picture {
+    display: block;
+  }
+  .error picture img {
+    width: 20vw;
+    height: auto;
+  }
+}
+
+/****************************** For Desktop version ******************************/
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  p,
+  a,
+  th,
+  td,
+  label,
+  input,
+  textarea {
+    font-size: 1.125rem;
+  }
+
+  /******************** Header ********************/
+  .container {
+    margin-left: 50px;
+  }
+  #headerLogo {
+    display: block !important;
+  }
+  #mobileTablet {
+    margin-left: 50px !important;
+  }
+  #headerHeading {
+    display: block !important;
+    text-align: center;
+    margin-left: -50px;
+  }
+  .headerNav #hamburgerMenu {
+    display: none !important;
+  }
+  .headerNav #myLinks {
+    display: block !important;
+  }
+  .headerNav ul {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5px;
+    margin-left: -50px;
+  }
+  .headerNav ul li {
+    margin: auto;
+    padding: 0 2em;
+    min-width: 170px;
+    min-height: 2em;
+    margin: auto 0;
+  }
+  .headerIndex #myLinks ul li:nth-child(1),
+  .headerIndex #myLinks ul li:nth-child(2),
+  .headerIndex #myLinks ul li:nth-child(3),
+  .headerIndex #myLinks ul li:nth-child(4) {
+    animation-name: sideLeft;
+    animation-duration: 1.5s;
+  }
+  #headerHeading {
+    animation-name: sideRight;
+    animation-duration: 1.5s;
+  }
+
+  /******************** Footer ********************/
+  .footerIndex .container {
+    margin-left: 0;
+  }
+  .containerMediaLogo {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    order: 2;
+    width: auto;
+    text-align: center;
+  }
+  #myFooterLinks {
+    width: 309px;
+    margin: auto 0;
+    order: 1;
+  }
+  .footerContact {
+    width: 309px;
+    margin: 0.5em 0;
+    order: 3;
+  }
+  .footerDesktop {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 1em 1em 0 1em;
+    height: 100%;
+  }
+  .footerMedia {
+    margin-bottom: 1em;
+  }
+  #myFooterLinks a {
+    border-radius: 13.5px;
+  }
+
+  /******************** Home Page ********************/
+  .mainIndex .container {
+    margin-left: 0;
+  }
+
+  /********** Slider **********/
+  .slideshow-container picture img {
+    height: 70vh;
+  }
+  .dots {
+    height: 60px;
+    padding-top: 20px;
+  }
+  .dot {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0 4px;
+  }
+
+  /********** Menu **********/
+  .menu {
+    display: flex;
+  }
+  .colOne,
+  .colTwo {
+    width: 50vw;
+  }
+  .menu table {
+    margin: 0 auto;
+  }
+  .menu td img {
+    display: block;
+    margin: 45px auto 42px auto;
+  }
+  .menu table .descriptionCofee {
+    height: 75px;
+  }
+  .menu table .tabletDesktop {
+    height: 75px;
+    padding-top: 2.5em;
+  }
+  .menu table {
+    width: 95%;
+  }
+  .container .menu .euro {
+    border-bottom: 3px solid #ed7d0c;
+    height: 75px;
+  }
+  .imgBg {
+    border-bottom: 3px solid #e0e0e0;
+  }
+
+  /******************** About Us Page ********************/
+  .aboutUs picture img {
+    margin-top: 1em;
+  }
+  .aboutUsContent p {
+    width: 60vw;
+    margin: 1em auto;
+  }
+
+  /******************** Testimonials Page ********************/
+  .names {
+    display: block;
+  }
+  .testeach {
+    height: 10em;
+  }
+  .testPlusButton {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .testimonials {
+    padding: 1em;
+  }
+  .testimonial {
+    width: 48%;
+    margin: 1%;
+  }
+  .cardBottom {
+    display: flex;
+    vertical-align: bottom;
+  }
+  .buttonPlus {
+    margin: auto 0 auto 1%;
+  }
+  .buttonPlus a i {
+    padding: 0.5em;
+  }
+
+  /******************** Contact Page ********************/
+  input[type="submit"] {
+    border-radius: 25.5px;
+  }
+
+  /******************** 404 Page ********************/
+}

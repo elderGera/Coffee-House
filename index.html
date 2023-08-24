@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Coffee House Home Page Created by Oleksandr Gerasymenko, 2023 -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO information -->
+    <meta
+      name="keywords"
+      content="Coffee house, Coffee, Dublin, Ireland, Best coffee, Coffee shops, Coffee shops near me, Espresso, Mocha, Cappuccino, Coffee near me, Green coffee, Roast, Coffee bean, Coffee maker, Coffee machines, Espresso machine, Costa coffee, Latte, Caribou coffee, Irish coffee, coffee grinder, Peet's coffee, Starbucks coffee, Black coffee, Keurig coffee maker, Coffee cup, Coffeeshop, Cuisinart coffee maker, Coffee pot
+    "
+    />
+    <meta
+      name="description"
+      content="We offer a delicious variety of coffee from Coffee House made by our professionally trained baristas. We have everything from classic coffee to our house made specialty beverages."
+    />
+
+    <!-- Connection with CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Connection with JS -->
+    <script src="./js/index.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/6886494723.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Coffee House | Coffee News - Main Menu - Dublin</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/logo-coffee-cup.ico"
+    />
+  </head>
+
+  <body>
+    <!-- Start of the header section -->
+    <header class="headerIndex">
+      <div class="container">
+        <a href="./index.html">
+          <img
+            src="./assets/images/logo-coffee-cup.webp"
+            id="headerLogo"
+            alt="logo"
+            width="100px"
+            height="100px"
+        /></a>
+        <div id="mobileTablet">
+          <nav class="headerNav">
+            <a href="#!" class="icon" id="hamburgerMenu" onClick="myFunction()"
+              ><img
+                src="./assets/images/hm/more.webp"
+                alt="more"
+                width="25px"
+                height="25px"
+              />
+            </a>
+            <div id="myLinks">
+              <ul>
+                <li class="navActive"><a href="./index.html">Home</a></li>
+                <li><a href="./html/about-us/about-us.html">About Us</a></li>
+                <li>
+                  <a href="./html/testimonials/testimonials.html"
+                    >Testimonials</a
+                  >
+                </li>
+                <li><a href="./html/contact/contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+          <h1 id="headerHeading">Coffee House</h1>
+        </div>
+      </div>
+    </header>
+    <!-- End of the header section -->
+
+    <!-- Start of the main section -->
+    <main class="mainIndex">
+      <div class="container">
+        <!-- Start of Slider -->
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <picture>
+              <source
+                media="(min-width:650px)"
+                srcset="./assets/images/home/1-cup/d-1-cup.webp"
+              />
+              <source
+                media="(min-width:370px)"
+                srcset="./assets/images/home/1-cup/t-1-cup.webp"
+              />
+              <img
+                src="./assets/images/home/1-cup/m-1-cup.webp"
+                alt="cup-1"
+                width="420px"
+                height="280px"
+              />
+            </picture>
+          </div>
+
+          <div class="mySlides fade">
+            <picture>
+              <source
+                media="(min-width:650px)"
+                srcset="./assets/images/home/2-cups/d-2-cups.webp"
+              />
+              <source
+                media="(min-width:370px)"
+                srcset="./assets/images/home/2-cups/t-2-cups.webp"
+              />
+              <img
+                src="./assets/images/home/2-cups/m-2-cups.webp"
+                alt="cup-2"
+                width="420px"
+                height="280px"
+              />
+            </picture>
+          </div>
+
+          <div class="mySlides fade">
+            <picture>
+              <source
+                media="(min-width:650px)"
+                srcset="./assets/images/home/plus-2-cakes/d-plus-2-cakes.webp"
+              />
+              <source
+                media="(min-width:370px)"
+                srcset="./assets/images/home/plus-2-cakes/t-plus-2-cakes.webp"
+              />
+              <img
+                src="./assets/images/home/plus-2-cakes/m-plus-2-cakes.webp"
+                alt="plus-2-cakes"
+                width="420px"
+                height="280px"
+              />
+            </picture>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)"
+            ><i class="fa-solid fa-circle-left fa-3x"></i
+          ></a>
+          <a class="next" onclick="plusSlides(1)"
+            ><i class="fa-solid fa-circle-right fa-3x"></i
+          ></a>
+        </div>
+
+        <!-- The dots/circles -->
+        <div class="dots" style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <!-- End of Slider -->
+
+        <!-- Start of Menu -->
+        <h2 id="headingMenu">Menu</h2>
+        <div class="menu">
+          <div class="colOne">
+            <table>
+              <tr>
+                <td rowspan="2" class="imgBg">
+                  <img
+                    src="./assets/images/home/menu/menu-coffee-cup.webp"
+                    alt="cupLogo"
+                    id="cup1"
+                    width="50px"
+                    height="50px"
+                  />
+                </td>
+                <th class="mobile" id="infoCup1" rowspan="2">
+                  <i
+                    class="fa-solid fa-arrow-left fa-beat-fade arrow"
+                    style="padding-right: 3px; color: #ed7d0c"
+                  ></i
+                  >CAFFÉ LATTE
+                </th>
+                <th class="tabletDesktop" id="infoCup2" style="display: none">
+                  <i
+                    class="fa-solid fa-arrow-left fa-beat-fade arrow"
+                    style="padding-right: 10px; color: #ed7d0c"
+                  ></i
+                  >CAFFÉ LATTE
+                </th>
+                <td>240ml</td>
+                <td>360ml</td>
+              </tr>
+              <tr class="euro">
+                <td class="descriptionCofee">
+                  Espresso and steamed milk topped with creamy foamed milk
+                </td>
+                <td>5&euro;</td>
+                <td>7&euro;</td>
+              </tr>
+
+              <tr>
+                <td rowspan="2" class="imgBg">
+                  <img
+                    src="./assets/images/home/menu/menu-coffee-cup.webp"
+                    alt="cupLogo"
+                    id="cup2"
+                    width="50px"
+                    height="50px"
+                  />
+                </td>
+                <th class="mobile" id="infoCup3" rowspan="2">
+                  <i
+                    class="fa-solid fa-arrow-left fa-beat-fade arrow"
+                    style="padding-right: 3px; color: #ed7d0c"
+                  ></i
+                  >CAPPUCCINO
+                </th>
+                <th class="tabletDesktop" id="infoCup4" style="display: none">
+                  <i
+                    class="fa-solid fa-arrow-left fa-beat-fade arrow"
+                    style="padding-right: 10px; color: #ed7d0c"
+                  ></i
+                  >CAPPUCCINO
+                </th>
+                <td>200ml</td>
+                <td>300ml</td>
+              </tr>
+              <tr class="euro">
+                <td class="descriptionCofee">
+                  Espresso with equal amounts of steamed and foamed milk
+                </td>
+                <td>4&euro;</td>
+                <td>6&euro;</td>
+              </tr>
+
+              <tr>
+                <td rowspan="2" class="imgBg">
+                  <img
+                    src="./assets/images/home/menu/menu-coffee-cup.webp"
+                    alt="cupLogo"
+                    id="cup3"
+                    width="50px"
+                    height="50px"
+                  />
+                </td>
+                <th class="mobile" id="infoCup5" rowspan="2">
+                  <i
+                    class="fa-solid fa-arrow-left fa-beat-fade arrow"
+                    style="padding-right: 3px; color: #ed7d0c"
+                  ></i
+                  >CAFFÉ AMERICANO
+                </th>
+                <th class="tabletDesktop" id="infoCup6" style="display: none">
+                  <i
+                    class="fa-solid fa-arrow-left fa-beat-fade arrow"
+                    style="padding-right: 10px; color: #ed7d0c"
+                  ></i
+                  >CAFFÉ AMERICANO
+                </th>
+                <td>200ml</td>
+                <td>300ml</td>
+              </tr>
+              <tr class="euro">
+                <td class="descriptionCofee">Espresso topped with hot water</td>
+                <td>4&euro;</td>
+                <td>6&euro;</td>
+              </tr>
+
+              <tr>
+                <td rowspan="2" class="imgBg">
+                  <img
+                    src="./assets/images/home/menu/menu-coffee-cup.webp"
+                    alt="cupLogo"
+                    id="cup4"
+                    width="50px"
+                    height="50px"
+                  />
+                </td>
+                <th class="mobile" id="infoCup7" rowspan="2">
+                  <i
+                    class="fa-solid fa-arrow-left fa-beat-fade arrow"
+                    style="padding-right: 3px; color: #ed7d0c"
+                  ></i
+                  >FLAT WHITE
+                </th>
+                <th class="tabletDesktop" id="infoCup8" style="display: none">
+                  <i
+                    class="fa-solid fa-arrow-left fa-beat-fade arrow"
+                    style="padding-right: 10px; color: #ed7d0c"
+                  ></i
+                  >FLAT WHITE
+                </th>
+                <td>280ml</td>
+                <td>420ml</td>
+              </tr>
+              <tr class="euro">
+                <td class="descriptionCofee">
+                  Ristretto and steamed velvety flat milk
+                </td>
+                <td>6&euro;</td>
+                <td>9&euro;</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="colTwo">
+            <table>
+              <tr>
+                <td rowspan="2" class="imgBg">
+                  <img
+                    src="./assets/images/home/menu/menu-coffee-cup.webp"
+                    alt="cupLogo"
+                    id="cup5"
+                    width="50px"
+                    height="50px"
+                  />
+                </td>
+                <th class="mobile" id="infoCup9" rowspan="2">
+                  <i
+                    class="fa-solid fa-arrow-left fa-beat-fade arrow"
+                    style="padding-right: 3px; color: #ed7d0c"
+                  ></i
+                  >ESPRESSO
+                </th>
+                <th class="tabletDesktop" id="infoCup10" style="display: none">
+                  <i
+                    class="fa-solid fa-arrow-left fa-beat-fade arrow"
+                    style="padding-right: 10px; color: #ed7d0c"
+                  ></i
+                  >ESPRESSO
+                </th>
+                <td>160ml</td>
+                <td>240ml</td>
+              </tr>
+              <tr class="euro">
+                <td class="descriptionCofee">
+                  Shot of espresso extracted the Italian way
+                </td>
+                <td>3&euro;</td>
+                <td>5&euro;</td>
+              </tr>
+
+              <tr>
+                <td rowspan="2" class="imgBg">
+                  <img
+                    src="./assets/images/home/menu/menu-coffee-cup.webp"
+                    alt="cupLogo"
+                    id="cup6"
+                    width="50px"
+                    height="50px"
+                  />
+                </td>
+                <th class="mobile" id="infoCup11" rowspan="2">
+                  <i
+                    class="fa-solid fa-arrow-left fa-beat-fade arrow"
+                    style="padding-right: 3px; color: #ed7d0c"
+                  ></i
+                  >ESPRESSO MACCHIATO
+                </th>
+                <th class="tabletDesktop" id="infoCup12" style="display: none">
+                  <i
+                    class="fa-solid fa-arrow-left fa-beat-fade arrow"
+                    style="padding-right: 10px; color: #ed7d0c"
+                  ></i
+                  >ESPRESSO MACCHIATO
+                </th>
+                <td>200ml</td>
+                <td>300ml</td>
+              </tr>
+              <tr class="euro">
+                <td class="descriptionCofee">
+                  Espresso marked with foamed milk
+                </td>
+                <td>5&euro;</td>
+                <td>7&euro;</td>
+              </tr>
+
+              <tr>
+                <td rowspan="2" class="imgBg">
+                  <img
+                    src="./assets/images/home/menu/menu-coffee-cup.webp"
+                    alt="cupLogo"
+                    id="cup7"
+                    width="50px"
+                    height="50px"
+                  />
+                </td>
+                <th class="mobile" id="infoCup13" rowspan="2">
+                  <i
+                    class="fa-solid fa-arrow-left fa-beat-fade arrow"
+                    style="padding-right: 3px; color: #ed7d0c"
+                  ></i
+                  >ESPRESSO CON PANNA
+                </th>
+                <th class="tabletDesktop" id="infoCup14" style="display: none">
+                  <i
+                    class="fa-solid fa-arrow-left fa-beat-fade arrow"
+                    style="padding-right: 10px; color: #ed7d0c"
+                  ></i
+                  >ESPRESSO CON PANNA
+                </th>
+                <td>200ml</td>
+                <td>300ml</td>
+              </tr>
+              <tr class="euro">
+                <td class="descriptionCofee">
+                  Espresso and steamed milk topped with creamy foamed milk
+                </td>
+                <td>5&euro;</td>
+                <td>7&euro;</td>
+              </tr>
+
+              <tr>
+                <td rowspan="2" class="imgBg">
+                  <img
+                    src="./assets/images/home/menu/menu-coffee-cup.webp"
+                    alt="cupLogo"
+                    id="cup8"
+                    width="50px"
+                    height="50px"
+                  />
+                </td>
+                <th class="mobile" id="infoCup15" rowspan="2">
+                  <i
+                    class="fa-solid fa-arrow-left fa-beat-fade arrow"
+                    style="padding-right: 3px; color: #ed7d0c"
+                  ></i
+                  >ESPRESSO RISTRETTO
+                </th>
+                <th class="tabletDesktop" id="infoCup16" style="display: none">
+                  <i
+                    class="fa-solid fa-arrow-left fa-beat-fade arrow"
+                    style="padding-right: 10px; color: #ed7d0c"
+                  ></i
+                  >ESPRESSO RISTRETTO
+                </th>
+                <td>160ml</td>
+                <td>240ml</td>
+              </tr>
+              <tr class="euro">
+                <td class="descriptionCofee">
+                  Espresso and steamed milk topped with creamy foamed milk
+                </td>
+                <td>3&euro;</td>
+                <td>5&euro;</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- End of Menu -->
+      </div>
+    </main>
+    <!-- End of the main section -->
+
+    <!-- Start of the footer section -->
+    <footer class="footerIndex">
+      <div class="container">
+        <div class="footerDesktop">
+          <!-- Start of Media and Logo -->
+          <div class="containerMediaLogo">
+            <div class="footerMedia">
+              <a href="https://www.facebook.com" target="_blank"
+                ><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i
+              ></a>
+              <a href="https://www.instagram.com" target="_blank"
+                ><i class="fa fa-instagram fa-3x" aria-hidden="true"></i
+              ></a>
+              <a href="https://twitter.com" target="_blank"
+                ><i class="fa-brands fa-twitter fa-3x" aria-hidden="true"></i
+              ></a>
+            </div>
+            <a href="./index.html">
+              <img
+                src="./assets/images/logo-coffee-cup.webp"
+                id="footerLogo"
+                alt="logo"
+                width="100px"
+                height="100px"
+            /></a>
+          </div>
+          <!-- End of Media and Logo -->
+
+          <!-- Start of Footer Navigation -->
+          <div id="myFooterLinks">
+            <a href="./index.html" class="navActive">Home</a>
+            <a href="./html/about-us/about-us.html">About Us</a>
+            <a href="./html/testimonials/testimonials.html">Testimonials</a>
+            <a href="./html/contact/contact.html">Contact</a>
+          </div>
+          <!-- End of Footer Navigation -->
+
+          <!-- Start of Footer Contact -->
+          <div class="footerContact">
+            <p>
+              Contact:<br />
+              The Square Shopping Centre<br />
+              Tallaght Dublin 24<br />
+              D24 A29Y<br />
+              Tel: <a href="tel:014519528" target="_blank">014519528</a><br />
+              Email:
+              <a href="mailto:administration@coffee-house.ie" target="_blank"
+                >administration@coffee-house.ie</a
+              >
+            </p>
+          </div>
+          <!-- End of Footer Contact -->
+        </div>
+
+        <!-- Start of Copy -->
+        <div class="footerCopy">
+          <p>&copy; Copyright 2023 Coffee House</p>
+        </div>
+        <!-- End of Copy -->
+      </div>
+    </footer>
+    <!-- End of the footer section -->
+  </body>
+</html>
